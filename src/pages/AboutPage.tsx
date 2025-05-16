@@ -105,11 +105,8 @@ const AboutPage = () => {
                 <div className="h-20 w-20 rounded-full bg-amazon-sunshine/10 flex items-center justify-center mx-auto mb-6">
                   <span className="text-amazon-sunshine font-bold text-2xl">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Venda</h3>
-                <p className="text-muted-foreground">
-                  Transações simplificadas via PIX garantem que o valor chegue 
-                  diretamente ao artesão, com apenas 3% de comissão para manter a plataforma.
-                </p>
+                <h3 className="text-xl font-bold mb-3">Compra e Venda</h3>
+                <p className="text-muted-foreground">Para cada venda efetuada na plataforma, iremos cobrar uma pequena taxa de 3% para mantermos a plataforma no ar.</p>
               </div>
             </div>
           </div>
