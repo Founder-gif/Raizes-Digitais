@@ -1,10 +1,4 @@
-
 import { Artisan, Product, Event } from "../types";
-
-// Extract unique categories from products to avoid duplication
-export const categories = Array.from(
-  new Set(products.map(product => product.category))
-);
 
 export const artisans: Artisan[] = [
   {
@@ -211,6 +205,11 @@ export const products: Product[] = [
     tags: ["Miniatura", "Ribeirinho", "Decoração"]
   }
 ];
+
+// Extract unique categories from products after products is defined
+export const categories = Array.from(
+  new Set(products.map(product => product.category))
+);
 
 export const events: Event[] = [
   {
