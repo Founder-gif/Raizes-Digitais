@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -110,7 +111,7 @@ const AboutPage = () => {
                 <h3 className="text-xl font-bold mb-3">Venda Direta</h3>
                 <p className="text-muted-foreground">
                   Transações simplificadas via PIX garantem que o valor chegue 
-                  diretamente ao artesão, sem intermediários.
+                  diretamente ao artesão, com apenas 3% de comissão para manter a plataforma.
                 </p>
               </div>
             </div>
