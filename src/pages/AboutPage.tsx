@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -127,35 +126,44 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-background p-6 rounded-lg shadow-sm">
               <div className="h-32 w-32 rounded-full bg-amazon-green mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-3xl">MJ</span>
+                <span className="text-white font-bold text-3xl">RH</span>
               </div>
-              <h3 className="text-xl font-bold text-center mb-2">Maria Joana</h3>
-              <p className="text-center text-muted-foreground mb-2">Fundadora e CEO</p>
-              <p className="text-center text-muted-foreground">
-                Antropóloga e empreendedora social com 10 anos de experiência trabalhando com comunidades tradicionais na Amazônia.
-              </p>
+              <h3 className="text-xl font-bold text-center mb-2">Ryeffer Harlan</h3>
             </div>
             
             <div className="bg-background p-6 rounded-lg shadow-sm">
               <div className="h-32 w-32 rounded-full bg-amazon-clay mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-3xl">PT</span>
+                <span className="text-white font-bold text-3xl">JP</span>
               </div>
-              <h3 className="text-xl font-bold text-center mb-2">Paulo Tukano</h3>
-              <p className="text-center text-muted-foreground mb-2">Diretor de Relacionamento</p>
-              <p className="text-center text-muted-foreground">
-                Artesão indígena e líder comunitário, responsável pelo contato direto com as comunidades artesãs.
-              </p>
+              <h3 className="text-xl font-bold text-center mb-2">João Paulo Pereira</h3>
             </div>
             
             <div className="bg-background p-6 rounded-lg shadow-sm">
               <div className="h-32 w-32 rounded-full bg-amazon-sunshine mx-auto mb-4 flex items-center justify-center">
-                <span className="text-amazon-green font-bold text-3xl">LC</span>
+                <span className="text-amazon-green font-bold text-3xl">GV</span>
               </div>
-              <h3 className="text-xl font-bold text-center mb-2">Luiza Costa</h3>
-              <p className="text-center text-muted-foreground mb-2">CTO</p>
-              <p className="text-center text-muted-foreground">
-                Engenheira de software especializada em soluções tecnológicas para regiões de conectividade limitada.
-              </p>
+              <h3 className="text-xl font-bold text-center mb-2">Gabrielly Viana</h3>
+            </div>
+
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="h-32 w-32 rounded-full bg-amazon-green mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-3xl">BV</span>
+              </div>
+              <h3 className="text-xl font-bold text-center mb-2">Bruna Vitória</h3>
+            </div>
+            
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="h-32 w-32 rounded-full bg-amazon-clay mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-3xl">KH</span>
+              </div>
+              <h3 className="text-xl font-bold text-center mb-2">Kethellen Hiroiaque</h3>
+            </div>
+            
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="h-32 w-32 rounded-full bg-amazon-sunshine mx-auto mb-4 flex items-center justify-center">
+                <span className="text-amazon-green font-bold text-3xl">WH</span>
+              </div>
+              <h3 className="text-xl font-bold text-center mb-2">Wesley Horquen</h3>
             </div>
           </div>
         </div>
