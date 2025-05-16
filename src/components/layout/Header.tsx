@@ -14,10 +14,11 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/1de067f9-a1ba-49f4-97ed-413a4832cce4.png" 
+                src="/lovable-uploads/c0feed30-6d58-46d7-b054-79308d935bde.png" 
                 alt="Raízes Digitais Logo" 
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
+              <span className="ml-3 text-xl font-bold text-amazon-green">Raízes Digitais</span>
             </Link>
           </div>
 
