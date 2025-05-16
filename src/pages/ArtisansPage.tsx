@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 
 const ArtisansPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [locationFilter, setLocationFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState('all');
   
   // Get unique locations (states)
   const locations = Array.from(new Set(artisans.map(artisan => artisan.location.state)));
@@ -17,7 +17,7 @@ const ArtisansPage = () => {
   const filteredArtisans = artisans.filter(artisan => {
     const matchesSearch = artisan.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           artisan.specialty.some(spec => spec.toLowerCase().includes(searchTerm.toLowerCase()));
-    const matchesLocation = locationFilter === '' || artisan.location.state === locationFilter;
+    const matchesLocation = locationFilter === 'all' || artisan.location.state === locationFilter;
     return matchesSearch && matchesLocation;
   });
 
@@ -47,7 +47,7 @@ const ArtisansPage = () => {
                 <SelectValue placeholder="Estado" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Todos os estados</SelectItem>
+                <SelectItem value="all">Todos os estados</SelectItem>
                 {locations.map((location) => (
                   <SelectItem key={location} value={location}>{location}</SelectItem>
                 ))}
@@ -56,18 +56,18 @@ const ArtisansPage = () => {
           </div>
         </div>
         
-        {searchTerm || locationFilter ? (
+        {searchTerm || locationFilter !== 'all' ? (
           <div className="mb-6 flex justify-between items-center">
             <p className="text-sm text-muted-foreground">
               {filteredArtisans.length} {filteredArtisans.length === 1 ? 'artesão encontrado' : 'artesãos encontrados'}
             </p>
-            {(searchTerm || locationFilter) && (
+            {(searchTerm || locationFilter !== 'all') && (
               <Button 
                 variant="ghost" 
                 size="sm"
                 onClick={() => {
                   setSearchTerm('');
-                  setLocationFilter('');
+                  setLocationFilter('all');
                 }}
               >
                 Limpar filtros
