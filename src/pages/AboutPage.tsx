@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const AboutPage = () => {
-  return (
-    <div>
+  return <div>
       {/* Hero Section */}
       <section className="hero-pattern py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +105,7 @@ const AboutPage = () => {
                 <div className="h-20 w-20 rounded-full bg-amazon-sunshine/10 flex items-center justify-center mx-auto mb-6">
                   <span className="text-amazon-sunshine font-bold text-2xl">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Venda Direta</h3>
+                <h3 className="text-xl font-bold mb-3">Venda</h3>
                 <p className="text-muted-foreground">
                   Transações simplificadas via PIX garantem que o valor chegue 
                   diretamente ao artesão, com apenas 3% de comissão para manter a plataforma.
@@ -187,8 +184,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default AboutPage;
