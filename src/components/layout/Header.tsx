@@ -13,12 +13,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-amazon-green flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RD</span>
-              </div>
-              <div className="ml-3">
-                <h1 className="text-xl font-bold text-amazon-green">Raízes<span className="text-amazon-clay">Digitais</span></h1>
-              </div>
+              <img 
+                src="/lovable-uploads/1de067f9-a1ba-49f4-97ed-413a4832cce4.png" 
+                alt="Raízes Digitais Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
 
